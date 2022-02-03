@@ -1,0 +1,97 @@
+@font-face{
+  font-family:Palatino;
+  src:url(PalatinoLinotype.ttf);
+  font-display:swap;
+}
+
+body{
+  background-color:rgb(19, 18, 18);
+  color:rgb(238, 231, 218);
+  text-align: center;
+  font-family: Palatino;
+  
+}
+
+h1{
+  font-size: 3em !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+ul{
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  font-size: x-large;
+  line-height: 1.20;
+  margin-bottom: 5px !important;
+  transform: translate(0px);
+}
+
+.score{
+  color:seagreen;
+}
+
+li:nth-child(1) > .username{
+  color: gold;
+  text-shadow: 0px 0px 15px gold;
+  animation: 1s linear 0s infinite alternate gloweffgold;
+}
+
+li:nth-child(2) > .username{
+  color: silver;
+  text-shadow: 0px 0px 10px silver;
+  animation: 1s linear 0s infinite alternate gloweffsilver;
+}
+
+li:nth-child(3) > .username{
+  color: #cd7f32;
+  text-shadow: 0px 0px 5px #cd7f32;
+  animation: 1s linear 0s infinite alternate gloweffbronze;
+}
+
+li:last-child{
+  margin-top: 20px;
+}
+
+@keyframes gloweffgold {
+  from { text-shadow: 0px 0px 18px gold; } to { text-shadow: 0px 0px 5px gold; };
+}
+
+@keyframes gloweffsilver {
+  from { text-shadow: 0px 0px 10px silver; } to { text-shadow: 0px 0px 5px silver; };
+}
+
+@keyframes gloweffbronze {
+  from { text-shadow: 0px 0px 5px #cd7f32; } to { text-shadow: 0px 0px 2px #cd7f32; };
+}
+
+.kotkot{
+  position:absolute;
+  left:10px;
+  top:20px;
+}
+
+.kotkot:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+
+.self{
+  color: rgba(82, 76, 76, 0.486);
+  font-size: 0.65em;
+}
+
+.pepepoint{
+  transform: rotate(-90deg);
+}
+
+.tier{
+  text-decoration: none;
+  color:inherit;
+  border-bottom: 1px solid rgb(238, 231, 218);
+}
+
+.tier:hover{
+  border-bottom: 2px solid rgb(238, 231, 218);
+}

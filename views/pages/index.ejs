@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ("../partials/header.ejs") %>
+</head>
+  <body>
+    <img src="/stylesheets/kot.png" width="100" height="100" class="kotkot" onclick="playSound('/stylesheets/prout.mp3')">
+    <h1>Classement</h1>
+    <a href="/stylesheets/tier.png" target="_blank" class="tier">Points par emoji/emote et pourcentage de chances</a>    
+    <div class="list">
+    <ul>
+        <% results.forEach(function(r) { %>
+            <li><span class="username"><%= r.username %></span> - <span class="score"><%= r.score %></span></li>
+        <% }); %> 
+        
+    </ul>
+    </div>
+    <img src="/stylesheets/pepePoint.png" class="pepepoint" width="50" height="50">
+    <p class="self">Fait par @03h7</p>
+  </body>
+</html>
+
+<script>
+
+function playSound(url) {
+  new Audio(url).play();
+}
+
+</script>
